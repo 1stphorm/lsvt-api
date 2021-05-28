@@ -34,7 +34,7 @@
                 "PhormDev\\LSVT\\LSVTApiServiceProvider"
             ],
             "aliases": {
-                "LSVT": "PhormDev\\LSVT\\Facade"
+                "LSVT": "PhormDev\\LSVT\\Facades\\LSVT"
             }
         }
     },
