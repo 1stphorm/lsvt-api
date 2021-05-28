@@ -13,7 +13,7 @@ class LSVTApiServiceProvider extends \Illuminate\Support\ServiceProvider
         );
 
         $this->publishes([
-            __DIR__.'/../config/filer.php' => config_path('lsvt.php'),
+            __DIR__.'/../config/lsvt.php' => config_path('lsvt.php'),
         ], 'lsvt-config');
 
         $this->app->singleton(API::class, function (Application $app) {

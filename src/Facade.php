@@ -2,8 +2,6 @@
 
 namespace PhormDev\LSVT;
 
-use App\LSVT\API;
-
 /**
  * Class Facade
  * @method getUserByUsername(string $username);
