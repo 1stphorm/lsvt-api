@@ -1,0 +1,45 @@
+{
+    "name": "1stphorm/lsvt-api",
+    "description": "LightSpeed VT API client for Laravel",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/support": "8.*"
+    },
+    "authors": [
+        {
+            "name": "Nick Vahalik",
+            "email": "nvahalik@1stphorm.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PhormDev\\LSVT\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@phpunit"
+        ],
+        "phpunit": "phpunit --verbose"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PhormDev\\LSVT\\LSVTApiServiceProvider"
+            ],
+            "aliases": {
+                "LSVT": "PhormDev\\LSVT\\Facade"
+            }
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.17"
+    }
+}
