@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^7.3",
-        "illuminate/support": "8.*"
+        "illuminate/support": "^8.0"
     },
     "authors": [
         {
